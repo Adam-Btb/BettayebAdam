@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adam Bettayeb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="burger-menu" id="btnBurger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="menu-mobile-overlay" id="menuOverlay">
+      <span class="fermer-menu" id="btnCloseMenu">&times;</span>
+      <a href="#accueil" class="lien-menu-mobile">Accueil</a>
+      <a href="#projets" class="lien-menu-mobile">Projets</a>
+      <a href="#competences" class="lien-menu-mobile">Compétences</a>
+      <a href="#a-propos" class="lien-menu-mobile">À propos</a>
+      <a href="#contact" class="lien-menu-mobile">Contact</a>
+      <a href="img/CVBettayebAdam.pdf" target="_blank" class="lien-cv-mobile">Mon CV ⭳</a>
+    </div>
+
+    <div class="conteneur-principal">
+      
+      <img class="deco-forme-1" alt="" src="img/Subtract.svg"> 
+      <img class="deco-forme-2" alt="" src="img/Subtract2.svg">
+      <img class="deco-blob-1" alt="" src="img/blob.svg">
+      <img class="deco-blob-2" alt="" src="img/blob2.svg">
+
+      <nav class="navigation-flottante">
+        <a href="#accueil" class="nav-bouton">Accueil</a>
+        <a href="#projets" class="nav-bouton">Projets</a>
+        <a href="#competences" class="nav-bouton">Compétences</a>
+        <a href="#a-propos" class="nav-bouton">A propos</a>
+        <a href="#contact" class="nav-bouton">Contact</a>
+      </nav>
+
+      <div class="section-hero" id="accueil">
+        <div class="carte-verre hero-fond"></div>
+        
+        <h1 class="hero-titre">
+          <span>Bonjour, </span>
+          <span class="texte-violet">je suis Adam Bettayeb</span>
+        </h1>
+        
+        <div class="hero-sous-titre">Étudiant en BUT Métiers du Multimédia et de l'Internet</div>
+        <div class="hero-description">
+            J'ai appris à construire mes propres sites et à comprendre comment ils marchent. <br>
+            Aujourd'hui, je cherche un stage en développement web de minimum 3 mois <br>
+            à partir du mois d'avril pour mettre en
+            pratique ce que j'ai appris et<br> progresser aux côtés d'une vraie équipe.
+        </div>
+        
+        <a href="img/CVBettayebAdam.pdf" target="_blank" class="bouton-cv">Mon CV ⭳</a>
+        <a href="#projets" class="bouton-decouvrir">Découvrir mes projets</a>
+        
+        <img class="icone-spotlight" alt="" src="img/spotlight.svg">
+          <a href="#projets" class="scroll-simple">
+          <span class="texte-scroll">Voir plus bas</span>
+          <span class="fleche-bas">↓</span>
+        </a>
+      </div>
+
+      <h2 class="titre-projets" id="projets">Mes Projets</h2>
+      
+      <div class="conteneur-cartes-projets">
+        <div class="barre-deco barre-projet"></div>
+
+        <div class="carte-projet pos-carte-1">
+          <div class="carte-verre fond-projet"></div>
+          <img class="img-apercu" src="capture-dcran-2025-12-20-213.png" alt="Aperçu Portfolio"> 
+          <h3 class="titre-projet">Mon Portfolio V1</h3>
+          <p class="desc-projet">
+            Création de mon identité numérique. Site développé from scratch pour présenter mes compétences et trouver mon stage.
+          </p>
+          <div class="bouton-details-wrapper" onclick="ouvrirModal('modal-projet-1')">
+            Plus de détails
+          </div>
+        </div>
+
+        <div class="carte-projet pos-carte-2">
+            <div class="carte-verre fond-projet"></div>
+            <img class="img-apercu" src="img/sae303-cover.png" alt="Aperçu SAE 303">
+            <h3 class="titre-projet">SAE 303 : Data Climat</h3>
+            <p class="desc-projet">
+              Application interactive d'exploration des opinions climatiques en France. Carte dynamique et graphiques D3.js.
+            </p>
+            <div class="bouton-details-wrapper" onclick="ouvrirModal('modal-projet-2')">
+              Plus de détails
+            </div>
+        </div>
+
+        <div class="carte-projet pos-carte-3">
+            <div class="carte-verre fond-projet"></div>
+            <img class="img-apercu" src="img/motus-cover.png" alt="Aperçu Motus DBZ">
+            <h3 class="titre-projet">Motus Dragon Ball</h3>
+            <p class="desc-projet">
+              Jeu Motus développé en PHP Orienté Objet (MVC). Gestion de sessions, base de données et génération d'images.
+            </p>
+            <div class="bouton-details-wrapper" onclick="ouvrirModal('modal-projet-3')">
+              Plus de détails
+            </div>
+        </div>
+
+        <div class="carte-projet pos-carte-4">
+            <div class="carte-verre fond-projet"></div>
+            <img class="img-apercu" src="img/devfront-cover.png" alt="Aperçu DevFront">
+            <h3 class="titre-projet">DevFront : Intégration</h3>
+            <p class="desc-projet">
+                Site vitrine responsive démontrant la maîtrise des fondamentaux du web : HTML5 sémantique, CSS3 moderne et animations.
+            </p>
+            <div class="bouton-details-wrapper" onclick="ouvrirModal('modal-projet-4')">
+                Plus de détails
+            </div>
+        </div>
+      </div>
+
+      <h2 class="titre-competences" id="competences">Mes Compétences</h2>
+      <div class="barre-deco barre-competences"></div>
+
+      <div class="section-competences">
+        <div class="ligne-floue ligne-haut"></div>
+        <div class="ligne-floue ligne-bas"></div>
+        
+        <div class="conteneur-logos">
+          <div class="logo-track">
+            <img src="img/javascript.png" class="logo-skill">
+            <img src="img/HTML5.png" class="logo-skill">
+            <img src="img/illustrator.png" class="logo-skill">
+            <img src="img/figma.png" class="logo-skill">
+            <img src="img/davinci.png" class="logo-skill">
+            <img src="img/react.png" class="logo-skill">
+            <img src="img/CSS3.png" class="logo-skill">
+            <img src="img/linux.png" class="logo-skill">
+            <img src="img/sql.png" class="logo-skill">
+            <img src="img/php.png" class="logo-skill">
+            <img src="img/photoshop.png" class="logo-skill">
+
+            <img src="img/javascript.png" class="logo-skill">
+            <img src="img/HTML5.png" class="logo-skill">
+            <img src="img/illustrator.png" class="logo-skill">
+            <img src="img/figma.png" class="logo-skill">
+            <img src="img/davinci.png" class="logo-skill">
+            <img src="img/react.png" class="logo-skill">
+            <img src="img/CSS3.png" class="logo-skill">
+            <img src="img/linux.png" class="logo-skill">
+            <img src="img/sql.png" class="logo-skill">
+            <img src="img/php.png" class="logo-skill">
+            <img src="img/photoshop.png" class="logo-skill">    
+         </div>
+       </div>
+      </div>
+      
+      <img class="icone-spotlight-bas" alt="" src="img/spotlight2.svg">
+
+     <div class="section-apropos" id="a-propos">
+      <h2 class="titre-apropos">À propos</h2>
+      <div class="barre-deco barre-apropos"></div>
+      
+      <div class="carte-verre grande-carte pos-info-1">
+        <div class="titre-info">Ma Recherche</div>
+        <div class="texte-info">
+          <span class="sous-titre-interne">Avril 2026</span>
+          Mon ambition ? Intégrer une équipe technique pour travailler sur des projets <span class="tag-skill">Front-End</span> ou <span class="tag-skill">Full-Stack</span>.
+          <br><br>
+          <span class="sous-titre-interne">Ma Valeur Ajoutée</span>
+          Au-delà du code, je cherche à comprendre le <em>pourquoi</em> de chaque projet. Je m'investis pour livrer des produits finis, optimisés et utiles. Je suis immédiatement opérationnel pour contribuer à vos interfaces web et je suis <span class="highlight">prêt à collaborer</span>.
+        </div>
+      </div>
+
+      <div class="carte-verre petite-carte pos-info-2">
+          <div class="titre-info-petite">Mon Parcours</div>
+          <div class="texte-info-petite">
+            <span class="sous-titre-interne">Actuellement</span>
+            <span class="highlight">BUT MMI</span> (Métiers du Multimédia et de l'Internet).<br>
+            Une formation polyvalente : <br>
+            <span class="tag-skill">Dev Web</span> <span class="tag-skill">Design UI/UX</span> <span class="tag-skill">Stratégie</span>
+            <br><br>
+
+            <span class="sous-titre-interne">Background Atypique</span>
+            Mon profil est unique grâce à une double compétence :<br>
+            • <span class="highlight">BTS SIO</span> : Bases solides en algorithmique & réseau.<br>
+            • <span class="highlight">BTS MCO</span> : Gestion & Relation client.<br>
+            Je sais coder, mais je comprends aussi le business.
+          </div>
+      </div>
+
+      <div class="carte-verre petite-carte pos-info-3">
+          <div class="titre-info-petite">Mes atouts</div>
+          <div class="texte-info-petite">
+            <span class="sous-titre-interne">Savoir-Être</span>
+            Mes expériences (Vente chez Bouygues, Éducateur) ont forgé mon caractère :<br>
+            <span class="highlight">Travail d'équipe</span> & Gestion de conflits<br>
+            <span class="highlight">Persévérance</span> & Autonomie<br>
+            <span class="highlight">Organisation</span> rigoureuse<br>
+            <br>
+            <span class="sous-titre-interne">Langues & Permis</span>
+            Anglais <strong>B1</strong> (Intermédiaire)<br>
+            Espagnol <strong>B1</strong> (Intermédiaire)<br>
+            Titulaire du <strong>Permis B</strong>
+          </div>
+      </div>
+    </div>
+
+      <h2 class="titre-contact" id="contact">
+        <span>Prêt à </span>
+        <span class="texte-violet">collaborer</span>
+        <span> avec moi?</span>
+      </h2>
+
+      <a href="#contact" class="bouton-cta-principal">
+        <span class="texte-cta">Contactez moi</span>
+        <span class="fleche-texte">↗</span>
+      </a>
+
+      <footer class="pied-de-page">
+        <div class="copyright">Copyright ©2026 Adam Bettayeb</div>
+        <div class="reseaux-sociaux">
+          <div class="conteneur-icone">
+            <a href="https://github.com/Adam-Btb" target="_blank" class="lien-icone">
+              <img class="img-icone" src="img/github.png" alt="GitHub"> 
+            </a>
+          </div>
+
+          <div class="conteneur-icone">
+            <a href="https://www.linkedin.com/in/adam-bettayeb-794865226/" target="_blank" class="lien-icone">
+              <img class="img-icone" src="img/linkedin.png" alt="LinkedIn"> 
+            </a>
+          </div>
+        </div>
+      </footer>
+    
+    </div> <div id="modal-projet-1" class="modal-overlay" onclick="fermerModal(event, 'modal-projet-1')">
+      <div class="modal-contenu carte-verre" onclick="event.stopPropagation()">
+        <span class="fermer-modal" onclick="fermerModal(event, 'modal-projet-1')">&times;</span>
+        <h2 class="modal-titre">Mon Portfolio V1</h2>
+        <div class="modal-carousel">
+          <div class="diapo fade">
+            <div class="numero-text">1 / 3</div>
+            <img src="capture-dcran-2025-12-20-213.png" style="width:100%">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">2 / 3</div>
+            <img src="capture-dcran-2025-12-20-2133.png" style="width:100%">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">3 / 3</div>
+            <img src="capture-dcran-2025-12-20-213.png" style="width:100%">
+          </div>
+          <a class="precedent" onclick="plusDiapos(-1, 'modal-projet-1')">&#10094;</a>
+          <a class="suivant" onclick="plusDiapos(1, 'modal-projet-1')">&#10095;</a>
+        </div>
+        <div class="modal-scroll-content">
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h3>Contexte</h3>
+              <p>Dans le cadre de ma recherche de stage de 2ème année de BUT MMI, j'avais besoin d'un support professionnel pour présenter mes réalisations. La consigne pour les élèves ayant choisis l'option dev était de tout coder plutôt que d'utiliser un template Wix ou Wordpress. C'est donc ce que j'ai fait.</p>
+            </div>
+            <div class="modal-col">
+              <h3>Objectif</h3>
+              <p>L'objectif principal était la performance et la maîtrise du code. Je voulais un site rapide, responsive, et qui reflète ma personnalité avec un design moderne, sans dépendre de librairies lourdes.</p>
+            </div>
+          </div>
+          <h3>Outils </h3>
+          <div class="conteneur-outils">
+            <div class="outil-badge"><img src="img/HTML5.png" alt="HTML"><span>HTML5</span></div>
+            <div class="outil-badge"><img src="img/CSS3.png" alt="CSS"><span>CSS3</span></div>
+            <div class="outil-badge"><img src="img/javascript.png" alt="JS"><span>JavaScript</span></div>
+            <div class="outil-badge"><img src="img/figma.png" alt="Figma"><span>Figma</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-projet-2" class="modal-overlay" onclick="fermerModal(event, 'modal-projet-2')">
+      <div class="modal-contenu carte-verre" onclick="event.stopPropagation()">
+        <span class="fermer-modal" onclick="fermerModal(event, 'modal-projet-2')">&times;</span>
+        <h2 class="modal-titre">SAE 303 : Perception du Climat</h2>
+        <div class="modal-carousel">
+          <div class="diapo fade">
+            <div class="numero-text">1 / 3</div>
+            <img src="img/sae303-1.png" style="width:100%" alt="Carte Interactive">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">2 / 3</div>
+            <img src="img/sae303-2.png" style="width:100%" alt="Graphiques D3.js">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">3 / 3</div>
+            <img src="img/sae303-3.png" style="width:100%" alt="Interface">
+          </div>
+          <a class="precedent" onclick="plusDiapos(-1, 'modal-projet-2')">&#10094;</a>
+          <a class="suivant" onclick="plusDiapos(1, 'modal-projet-2')">&#10095;</a>
+        </div>
+        <div class="modal-scroll-content">
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h3>Contexte & Données</h3>
+              <p>Projet universitaire visant à rendre intelligibles les données complexes du <strong>Baromètre ADEME</strong>. L'objectif était de traiter un fichier CSV massif ("Baromètre représentations sociales") pour en extraire des tendances par département.</p>
+            </div>
+            <div class="modal-col">
+              <h3>Fonctionnalités</h3>
+              <p>L'application permet de survoler une <strong>carte de France interactive</strong> (SVG) pour afficher dynamiquement 5 types de visualisations : histogrammes (Démographie), courbes (Solutions), barres (Causes), camemberts (Mobilité) et nuages de points (Corrélations).</p>
+            </div>
+          </div>
+          <h3>Stack Technique</h3>
+          <div class="conteneur-outils">
+            <div class="outil-badge"><img src="img/javascript.png" alt="JS"><span>JavaScript</span></div>
+            <div class="outil-badge"><img src="img/d3.png" alt="D3"><span>D3.js </span></div>
+            <div class="outil-badge"><img src="img/HTML5.png" alt="HTML"><span>HTML5</span></div>
+            <div class="outil-badge"><img src="img/CSS3.png" alt="CSS"><span>CSS3</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-projet-3" class="modal-overlay" onclick="fermerModal(event, 'modal-projet-3')">
+      <div class="modal-contenu carte-verre" onclick="event.stopPropagation()">
+        <span class="fermer-modal" onclick="fermerModal(event, 'modal-projet-3')">&times;</span>
+        <h2 class="modal-titre">Motus Dragon Ball (PHP)</h2>
+        <div class="modal-carousel">
+          <div class="diapo fade">
+            <div class="numero-text">1 / 3</div>
+            <img src="img/motus-1.png" style="width:100%" alt="Grille de Jeu">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">2 / 3</div>
+            <img src="img/motus-2.png" style="width:100%" alt="Victoire et Score">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">3 / 3</div>
+            <img src="img/motus-3.png" style="width:100%" alt="Architecture PHP">
+          </div>
+          <a class="precedent" onclick="plusDiapos(-1, 'modal-projet-3')">&#10094;</a>
+          <a class="suivant" onclick="plusDiapos(1, 'modal-projet-3')">&#10095;</a>
+        </div>
+        <div class="modal-scroll-content">
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h3>Architecture & Back-End</h3>
+              <p>Développement d'un jeu complet en <strong>PHP natif</strong> utilisant une architecture <strong>MVC</strong> (Modèle-Vue-Contrôleur). Le projet utilise la Programmation Orientée Objet avec des classes dédiées (<code>Jeu</code>, <code>Dictionnaire</code>, <code>Vues</code>) pour structurer la logique, séparer l'affichage et gérer les interactions.</p>
+            </div>
+            <div class="modal-col">
+              <h3>Fonctionnalités Clés</h3>
+              <p>• <strong>Logique de Jeu :</strong> Gestion des essais, colorisation des lettres (bien/mal placé) et sessions PHP.<br>• <strong>Base de Données :</strong> Stockage des mots et leaderboard des scores via MySQL (PDO).<br>• <strong>Génération d'Image :</strong> Création dynamique d'un certificat de score en PNG via la librairie GD.</p>
+            </div>
+          </div>
+          <h3>Stack Technique</h3>
+          <div class="conteneur-outils">
+            <div class="outil-badge"><img src="img/php.png" alt="PHP"><span>PHP</span></div>
+            <div class="outil-badge"><img src="img/sql.png" alt="MySQL"><span>MySQL</span></div>
+            <div class="outil-badge"><img src="img/css3.png" alt="CSS"><span>CSS3</span></div>
+            <div class="outil-badge"><img src="img/linux.png" alt="Apache"><span>Serveur Apache</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-projet-4" class="modal-overlay" onclick="fermerModal(event, 'modal-projet-4')">
+      <div class="modal-contenu carte-verre" onclick="event.stopPropagation()">
+        
+        <span class="fermer-modal" onclick="fermerModal(event, 'modal-projet-4')">&times;</span>
+
+        <h2 class="modal-titre">DevFront : Showcase Intégration</h2>
+
+        <div class="modal-carousel">
+          <div class="diapo fade">
+            <div class="numero-text">1 / 3</div>
+            <img src="img/devfront-1.png" style="width:100%" alt="Vue Desktop">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">2 / 3</div>
+            <img src="img/devfront-2.png" style="width:100%" alt="Version Responsive">
+          </div>
+          <div class="diapo fade">
+            <div class="numero-text">3 / 3</div>
+            <img src="img/devfront-3.png" style="width:100%" alt="Code Source">
+          </div>
+
+          <a class="precedent" onclick="plusDiapos(-1, 'modal-projet-4')">&#10094;</a>
+          <a class="suivant" onclick="plusDiapos(1, 'modal-projet-4')">&#10095;</a>
+        </div>
+
+        <div class="modal-scroll-content">
+          <div class="modal-grid">
+            <div class="modal-col">
+              <h3>Contexte</h3>
+              <p>
+                Projet personnel de démonstration technique hébergé sur GitHub Pages. L'objectif est de présenter une <strong>intégration web pixel-perfect</strong> à partir d'une maquette graphique, en respectant les standards du W3C.
+              </p>
+            </div>
+            <div class="modal-col">
+              <h3>Compétences Validées</h3>
+              <p>
+                • <strong>Responsive Design :</strong> Adaptation fluide sur mobile, tablette et desktop (Media Queries).<br>
+                • <strong>Sémantique :</strong> Structure HTML5 optimisée pour le SEO.<br>
+                • <strong>Animations :</strong> Utilisation de transitions CSS3 fluides pour dynamiser l'interface.<br>
+                • <strong>Déploiement :</strong> Mise en ligne via Git et GitHub Pages.
+              </p>
+            </div>
+          </div>
+
+          <h3>Stack Technique</h3>
+          <div class="conteneur-outils">
+            
+            <div class="outil-badge">
+              <img src="img/HTML5.png" alt="HTML">
+              <span>HTML5 Sémantique</span>
+            </div>
+
+            <div class="outil-badge">
+              <img src="img/CSS3.png" alt="CSS">
+              <span>CSS3 / Flexbox</span>
+            </div>
+            
+            <div class="outil-badge">
+              <img src="img/github.png" alt="Git">
+              <span>GitHub Pages</span>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
