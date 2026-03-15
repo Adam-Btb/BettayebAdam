@@ -1,0 +1,165 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px;
+    animation-name: animPoints;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.d1 { animation-delay: 0s; }
+.d2 { animation-delay: 0.3s; }
+.d3 { animation-delay: 0.6s; }
+@keyframes animPoints {
+    from { transform: scale(1); }
+    to { transform: scale(1.7); }
+}
+.bar {
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    margin: 2px;
+    animation: animVague 1s infinite alternate;
+}
+.b1 { animation-delay: 0s; }
+.b2 { animation-delay: 0.2s; }
+.b3 { animation-delay: 0.4s; }
+.b4 { animation-delay: 0.6s; }
+.b5 { animation-delay: 0.8s; }
+.b6 { animation-delay: 1s; }
+.b7 { animation-delay: 1.2s; }
+
+@keyframes animVague {
+    from { height: 20px; }
+    to { height: 60px; }
+}
+.spin-img {
+    width: 100px;
+    height: 100px;
+    animation: animTourne 2s linear infinite;
+}
+
+@keyframes animTourne {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(1turn); }
+}
+.text-scenario {
+    height: 50px;
+    font-size: 25px;
+    white-space: nowrap;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    animation: animScenario 8s forwards infinite;
+}
+
+@keyframes animScenario {
+    0% { 
+        width: 0; 
+        background-color: green; 
+        transform: translateX(0);
+    }
+    40% { 
+        width: 220px; 
+        background-color: green; 
+    }
+    50% { 
+        background-color: red; 
+        transform: translateX(0);
+    }
+    55% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    65% { transform: translateX(-10px); }
+    70% { transform: translateX(10px); }
+    80% { 
+        opacity: 1; 
+        background-color: red;
+    }
+    100% { 
+        opacity: 0; 
+        width: 220px;
+        background-color: red;
+    }
+}
+
+.btn-check {
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: url('checked.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0; 
+    transition-property: width, border-radius, background-color, color, background-size;
+    transition-duration: 0.5s;
+}
+.btn-check:active {
+    width: 70px;            
+    border-radius: 50%;    
+    color: transparent;    
+    background-color: white;
+    border: 2px solid green;
+    background-size: 30px;  
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.grid-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    margin: 2px;
+    animation: animGrid 2s infinite alternate;
+}
+.g1 { animation-delay: 0s; 
+background-color: red;}
+.g2 { animation-delay: 0.5s; 
+background-color: rgb(111, 145, 122);}
+.g3 { animation-delay: 1s; 
+background-color: rgb(187, 255, 0);}
+.g4 { animation-delay: 1.5s; }
+.g5 { animation-delay: 2s; }
+.g6 { animation-delay: 2.5s; }
+.g7 { animation-delay: 3s; }
+.g8 { animation-delay: 3.5s; }
+.g9 { animation-delay: 4s; }
+
+@keyframes animGrid {
+    from { border-radius: 20%; transform: scale(1); }
+    to { border-radius: 50%; transform: scale(0.8); }
+}
+
+.text-wave span {
+    display: inline-block;
+    animation: animLettre 1s infinite alternate;
+}
+
+.text-wave span:nth-child(1) { animation-delay: 0s; }
+.text-wave span:nth-child(2) { animation-delay: 0.2s; }
+.text-wave span:nth-child(3) { animation-delay: 0.4s; }
+.text-wave span:nth-child(4) { animation-delay: 0.6s; }
+.text-wave span:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes animLettre {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
