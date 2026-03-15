@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mentions légales du portfolio d'Adam Bettayeb.">
+    <title>Mentions légales | Adam Bettayeb</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            safelist: [
+                'hover:border-cyber-green', 'hover:border-cyber-purple',
+                'hover:border-pink-500', 'hover:border-orange-500',
+                'hover:border-blue-500', 'hover:border-red-500',
+                'hover:border-yellow-200', 'hover:border-blue-400',
+                'hover:bg-cyber-green/10', 'hover:bg-cyber-purple/10',
+                'hover:bg-pink-500/10', 'hover:bg-orange-500/10',
+                'hover:bg-blue-500/10', 'hover:bg-red-500/10',
+                'hover:bg-yellow-200/10', 'hover:bg-blue-400/10',
+                'text-orange-500', 'text-blue-500', 'text-yellow-400',
+                'text-cyan-400', 'text-indigo-400', 'text-blue-300',
+                'text-pink-400', 'text-yellow-200', 'text-white',
+            ],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'code':  ['"Fira Code"', 'monospace'],
+                        'tech':  ['Orbitron', 'sans-serif'],
+                        'body':  ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        cyber: {
+                            dark:   '#0a0a0f',
+                            green:  '#39ff14',
+                            purple: '#b026ff',
+                            gray:   '#1a1a24'
+                        }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1a1a24 1px, transparent 1px), linear-gradient(to bottom, #1a1a24 1px, transparent 1px)"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body grille-fond relative antialiased selection:bg-cyber-green selection:text-black">
+
+    <a href="#contenu-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-cyber-green text-black px-4 py-2 z-[100] font-tech font-bold">
+        Aller au contenu principal
+    </a>
+
+    <div class="lignes-balayage"></div>
+
+    <nav class="fixed w-full z-40 top-0 bg-cyber-dark/90 backdrop-blur-sm border-b border-cyber-green/30">
+        <div class="w-full px-4 sm:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex-shrink-0 font-tech text-cyber-green text-sm md:text-base font-bold tracking-widest uppercase hover:text-white transition-colors z-50 relative">
+                    ADAM BETTAYEB<span class="text-white">.</span>
+                </a>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#accueil" class="hover:text-cyber-green px-3 py-2 rounded-md text-sm font-tech font-bold transition-colors">Accueil</a>
+                        <a href="index.html#profil"  class="hover:text-cyber-green px-3 py-2 rounded-md text-sm font-tech font-bold transition-colors">À Propos</a>
+                        <a href="index.html#armes"   class="hover:text-cyber-green px-3 py-2 rounded-md text-sm font-tech font-bold transition-colors">Compétences</a>
+                        <a href="index.html#projets" class="hover:text-cyber-green px-3 py-2 rounded-md text-sm font-tech font-bold transition-colors">Projets</a>
+                        <a href="index.html#contact" class="hover:text-cyber-green px-3 py-2 rounded-md text-sm font-tech font-bold transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <button id="bouton-menu-mobile" class="md:hidden text-cyber-green hover:text-white focus:outline-none z-50 relative p-2" aria-label="Ouvrir le menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="menu-mobile" class="hidden md:hidden absolute top-16 left-0 w-full bg-cyber-dark/95 border-b border-cyber-green/30 backdrop-blur-md py-4 flex-col items-center space-y-4 shadow-xl z-40">
+            <a href="index.html#accueil" class="hover:text-cyber-green px-3 py-2 text-sm font-tech font-bold transition-colors w-full text-center">Accueil</a>
+            <a href="index.html#profil"  class="hover:text-cyber-green px-3 py-2 text-sm font-tech font-bold transition-colors w-full text-center">À Propos</a>
+            <a href="index.html#armes"   class="hover:text-cyber-green px-3 py-2 text-sm font-tech font-bold transition-colors w-full text-center">Compétences</a>
+            <a href="index.html#projets" class="hover:text-cyber-green px-3 py-2 text-sm font-tech font-bold transition-colors w-full text-center">Projets</a>
+            <a href="index.html#contact" class="hover:text-cyber-green px-3 py-2 text-sm font-tech font-bold transition-colors w-full text-center">Contact</a>
+        </div>
+    </nav>
+
+    <main id="contenu-principal" class="pt-24 pb-16 px-4 sm:px-8 max-w-3xl mx-auto relative z-10">
+
+        <div class="mb-12 text-center">
+            <p class="font-code text-cyber-green text-sm tracking-widest mb-2">// legal.txt</p>
+            <h1 class="font-tech font-bold text-3xl sm:text-4xl text-white mb-4">
+                Mentions <span class="text-cyber-green">Légales</span>
+            </h1>
+            <div class="w-24 h-0.5 bg-cyber-green mx-auto"></div>
+        </div>
+
+        <div class="space-y-8">
+
+            <section class="bg-cyber-gray border border-cyber-green/20 rounded-lg p-6 hover:border-cyber-green/50 transition-colors">
+                <h2 class="font-tech font-bold text-cyber-green text-lg mb-4 flex items-center gap-3">
+                    <span class="text-cyber-purple font-code text-sm">01.</span>
+                    Éditeur du site
+                </h2>
+                <dl class="space-y-2 text-gray-300 font-body text-sm leading-relaxed">
+                    <div class="flex flex-col sm:flex-row sm:gap-2">
+                        <dt class="font-code text-cyber-purple shrink-0">Nom :</dt>
+                        <dd>Adam Bettayeb, étudiant agissant à titre personnel</dd>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:gap-2">
+                        <dt class="font-code text-cyber-purple shrink-0">Adresse :</dt>
+                        <dd>Aulnay-sous-Bois</dd>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:gap-2">
+                        <dt class="font-code text-cyber-purple shrink-0">Email :</dt>
+                        <dd>
+                            <a href="mailto:adam.bettayeb26@gmail.com" class="text-cyber-green hover:underline">
+                                adam.bettayeb26@gmail.com
+                            </a>
+                        </dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="bg-cyber-gray border border-cyber-green/20 rounded-lg p-6 hover:border-cyber-green/50 transition-colors">
+                <h2 class="font-tech font-bold text-cyber-green text-lg mb-4 flex items-center gap-3">
+                    <span class="text-cyber-purple font-code text-sm">02.</span>
+                    Hébergement
+                </h2>
+                <dl class="space-y-2 text-gray-300 font-body text-sm leading-relaxed">
+                    <div class="flex flex-col sm:flex-row sm:gap-2">
+                        <dt class="font-code text-cyber-purple shrink-0">Hébergeur :</dt>
+                        <dd>Vercel Inc.</dd>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:gap-2">
+                        <dt class="font-code text-cyber-purple shrink-0">Adresse :</dt>
+                        <dd>340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</dd>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:gap-2">
+                        <dt class="font-code text-cyber-purple shrink-0">Site web :</dt>
+                        <dd>
+                            <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="text-cyber-green hover:underline">
+                                https://vercel.com
+                            </a>
+                        </dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="bg-cyber-gray border border-cyber-green/20 rounded-lg p-6 hover:border-cyber-green/50 transition-colors">
+                <h2 class="font-tech font-bold text-cyber-green text-lg mb-4 flex items-center gap-3">
+                    <span class="text-cyber-purple font-code text-sm">03.</span>
+                    Propriété intellectuelle
+                </h2>
+                <p class="text-gray-300 font-body text-sm leading-relaxed mb-3">
+                    L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+                </p>
+                <p class="text-gray-300 font-body text-sm leading-relaxed">
+                    Toute reproduction ou représentation intégrale ou partielle de ce site, par quelque procédé que ce soit, sans l'autorisation expresse d'Adam Bettayeb est interdite et constituerait une contrefaçon sanctionnée par le Code de la propriété intellectuelle.
+                </p>
+            </section>
+
+            <section class="bg-cyber-gray border border-cyber-green/20 rounded-lg p-6 hover:border-cyber-green/50 transition-colors">
+                <h2 class="font-tech font-bold text-cyber-green text-lg mb-4 flex items-center gap-3">
+                    <span class="text-cyber-purple font-code text-sm">04.</span>
+                    Données personnelles
+                </h2>
+                <p class="text-gray-300 font-body text-sm leading-relaxed mb-3">
+                    Ce site est un site vitrine statique (Portfolio) et ne dépose aucun cookie de traçage publicitaire.
+                </p>
+                <p class="text-gray-300 font-body text-sm leading-relaxed mb-3">
+                    Un formulaire de contact est mis à disposition via le service tiers Formspree. Les données saisies (nom, adresse email, message) sont transmises à Formspree Inc. pour le seul traitement de votre demande. Ces informations ne sont utilisées que pour vous répondre et ne sont jamais cédées à des tiers à des fins commerciales.
+                </p>
+                <p class="text-gray-300 font-body text-sm leading-relaxed">
+                    Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez <a href="mailto:adam.bettayeb26@gmail.com" class="text-cyber-green hover:underline">adam.bettayeb26@gmail.com</a>.
+                </p>
+            </section>
+
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="index.html" class="inline-flex items-center gap-2 font-code font-bold text-sm text-black bg-cyber-green px-6 py-3 uppercase border-2 border-cyber-green hover:bg-transparent hover:text-cyber-green transition-all duration-300">
+                <i class="fa-solid fa-arrow-left"></i>
+                Retour au portfolio
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bg-black py-8 border-t border-gray-800 text-center relative z-10">
+        <p class="font-tech text-sm text-gray-600">
+            Copyright &copy;2026 Adam Bettayeb | Développé avec <i class="fa-solid fa-heart text-cyber-purple mx-1"></i> et beaucoup de café
+        </p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('bouton-menu-mobile');
+        const menu = document.getElementById('menu-mobile');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('flex');
+            });
+        }
+    </script>
+
+</body>
+</html>
