@@ -1,0 +1,147 @@
+body {
+    background-color: #333333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: white;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    background-color: #CC0033;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.gauche {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.droite {
+    width: 60%;
+    line-height: 100%;
+}
+
+.droite div {
+    border : dashed 2px white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 12px;
+}
+
+#deux {
+    display: inline-block;
+    margin-top: -2px;
+}
+
+table {
+    border-collapse: collapse;
+    width: calc(100% - 20px);
+    margin: 10px;
+    
+}
+
+.table1 td  {
+    border : solid 1px black;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+th {
+    border : solid 1px black;
+    background-color: #CC0033;
+    color: white;
+    padding: 5px;
+}
+.droite2 {
+    border : dashed 2px white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    width: 60%;
+}
+.droite2 div{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #CC0033;
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 25px;
+}
+.titre {
+    background-color: #CC0033;
+    color: white;
+}
+.table2{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.table2 td{
+    border : solid 1px black;
+    color: #CC0033;
+    padding: 15px;
+    font-size: 15px;
+    background-color: rgb(204, 204, 204);
+    padding-left: 60px;
+    
+    
+}
+.st{
+    background-color: rgb(236, 160, 173);
+    color: white;
+}
+.texte{
+    background-color: rgb(204, 204, 204);
+    color: rgb(19, 170, 170);
+    font-weight: bold;
+}
+.texte::first-line{
+    color: #CC0033;
+}
+.texte2{
+    color: rgb(19, 170, 170);
+    background-color: rgb(204, 204, 204);
+    font-weight: bold;
+}
+.rouge{
+    color: #CC0033;
+}
+p{
+    color: rgb(19, 170, 170);
+    
+}
+.espace{
+    max-height: 1px;
+}
+
+.auto{
+    color: rgb(19, 170, 170);
+    font-weight: bold;
+}

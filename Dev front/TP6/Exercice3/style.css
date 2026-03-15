@@ -1,0 +1,32 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenu {
+    width: 30%; 
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+#helice {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 300px; 
+    animation-name: rotationHelice;
+    animation-duration: 0.4s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+
+}
+@keyframes rotationHelice {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP3 Exercice 1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="menu-navigation-tp">
+    <nav>
+        <ul class="menu-liste">
+            <li class="menu-item">
+                <a href="../../index.html" class="tp-title">Accueil</a>
+            </li>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP1</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP1/Exercice1/exo1.html">Exercice 1</a></li>
+                    <li><a href="../../TP1/Exercice2/Exercice2.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP2</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP2/Exercice2-1/exercice2.html">Exo 2-1</a></li>
+                    <li><a href="../../TP2/Exercice2-2/exercice2.html">Exo 2-2</a></li>
+                    <li><a href="../../TP2/Exercice2-3/exercice2.html">Exo 2-3</a></li>
+                    <li><a href="../../TP2/Exercice3/exercice3.html">Exercice 3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP3</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP3/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP3/Exercice2/index.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP4</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP4/Exercice1/exercice1.html">Exercice 1</a></li>
+                    <li><a href="../../TP4/Exercice2/exercice2.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP5</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP5/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP5/Exercice6/index.html">Exercice 6</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP6</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP6/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP6/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP6/Exercice3/index.html">Exercice 3</a></li>
+                    <li><a href="../../TP6/Exercice4/index.html">Exercice 4</a></li>
+                    <li><a href="../../TP6/Exercice5/index.html">Exercice 5</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP7</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP7/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP7/Exercice3/index.html">Exercice 3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP8</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP8/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP8/Exercice2/index.html">Exercice 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+    #menu-navigation-tp {
+        background-color: #000319; 
+        font-family: sans-serif;
+        font-size: 14px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 9999;
+    }
+
+    #menu-navigation-tp ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu-navigation-tp a {
+        text-decoration: none;
+        color: white;
+    }
+    #menu-navigation-tp .menu-liste {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    #menu-navigation-tp .menu-item {
+        position: relative;
+    }
+    #menu-navigation-tp .tp-title {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    #menu-navigation-tp .menu-item:hover .tp-title {
+        background-color: #000319;
+        color: #CBACF9; 
+    }
+    #menu-navigation-tp .sous-menu {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000319;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        border-radius: 0 0 4px 4px;
+    }
+    #menu-navigation-tp .sous-menu li a {
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid #000319;
+        transition: padding-left 0.2s;
+    }
+
+    #menu-navigation-tp .sous-menu li:last-child a {
+        border-bottom: none;
+    }
+    #menu-navigation-tp .sous-menu li a:hover {
+        background-color: #000319;
+        padding-left: 20px; 
+        color: #CBACF9;
+    }
+    #menu-navigation-tp .menu-item:hover .sous-menu {
+        display: block;
+    }
+</style>
+    <div class="bloc"></div>
+    <div style="max-width: 800px; margin: 20px auto; padding: 20px; border-radius: 8px; background-color: #000319; color: #CBACF9; font-family: sans-serif; line-height: 1.5;">
+    <h3 style="margin-top: 0; border-bottom: 1px solid #CBACF9; padding-bottom: 10px;">Bilan personnel</h3>
+    
+    <p>
+        <strong>Connaissances :</strong> J'ai découvert les "media queries" avec la commande "@media". J'ai compris comment changer la couleur d'un bloc quand l'écran devient plus petit (tablette ou mobile).
+    </p>
+
+    <p>
+        <strong>Difficulté :</strong> C'est facile. Il faut juste définir les tailles d'écran (les "breakpoints") en pixels.
+    </p>
+
+    <p>
+        <strong>Avis :</strong> C'est la base pour faire des sites qui s'adaptent partout. C'est marrant de voir le changement en direct quand on redimensionne la fenêtre.
+    </p>
+
+    <p>
+        <strong>Résultat :</strong> Ça marche bien, le carré passe du bleu au vert puis au jaune comme prévu.
+    </p>
+</div>
+</body>
+</html>
