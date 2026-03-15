@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.interface {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    padding: 20px 20px;
+    font-size: 16px;
+    background-color: orange; 
+    border: none;
+    cursor: pointer;
+    margin-top: 500px;
+}
+
+#monImage {
+    width: 600px;
+    transition: transform 1s linear;
+    transform-origin: center;
+}

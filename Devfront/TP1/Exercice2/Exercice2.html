@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="menu-navigation-tp">
+    <nav>
+        <ul class="menu-liste">
+            <li class="menu-item">
+                <a href="../../index.html" class="tp-title">Accueil</a>
+            </li>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP1</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP1/Exercice1/exo1.html">Exercice 1</a></li>
+                    <li><a href="../../TP1/Exercice2/Exercice2.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP2</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP2/Exercice2-1/exercice2.html">Exo 2-1</a></li>
+                    <li><a href="../../TP2/Exercice2-2/exercice2.html">Exo 2-2</a></li>
+                    <li><a href="../../TP2/Exercice2-3/exercice2.html">Exo 2-3</a></li>
+                    <li><a href="../../TP2/Exercice3/exercice3.html">Exercice 3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP3</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP3/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP3/Exercice2/index.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP4</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP4/Exercice1/exercice1.html">Exercice 1</a></li>
+                    <li><a href="../../TP4/Exercice2/exercice2.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP5</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP5/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP5/Exercice6/index.html">Exercice 6</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP6</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP6/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP6/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP6/Exercice3/index.html">Exercice 3</a></li>
+                    <li><a href="../../TP6/Exercice4/index.html">Exercice 4</a></li>
+                    <li><a href="../../TP6/Exercice5/index.html">Exercice 5</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP7</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP7/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP7/Exercice3/index.html">Exercice 3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP8</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP8/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP8/Exercice2/index.html">Exercice 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+    #menu-navigation-tp {
+        background-color: #000319; 
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 9999;
+    }
+
+    #menu-navigation-tp ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu-navigation-tp a {
+        text-decoration: none;
+        color: white;
+    }
+    #menu-navigation-tp .menu-liste {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    #menu-navigation-tp .menu-item {
+        position: relative;
+    }
+    #menu-navigation-tp .tp-title {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    #menu-navigation-tp .menu-item:hover .tp-title {
+        background-color: #000319;
+        color: #CBACF9; 
+    }
+    #menu-navigation-tp .sous-menu {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000319;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        border-radius: 0 0 4px 4px;
+    }
+    #menu-navigation-tp .sous-menu li a {
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid #000319;
+        transition: padding-left 0.2s;
+    }
+
+    #menu-navigation-tp .sous-menu li:last-child a {
+        border-bottom: none;
+    }
+    #menu-navigation-tp .sous-menu li a:hover {
+        background-color: #000319;
+        padding-left: 20px; 
+        color: #CBACF9;
+    }
+    #menu-navigation-tp .menu-item:hover .sous-menu {
+        display: block;
+    }
+</style>
+<div id="page">
+     <header>
+       <p>Header content</p>
+       <ul>
+         <li><a href="#">Link</a></li>
+         <li><a href="#">Link</a></li>
+         <li><a href="#">Link</a></li>
+       </ul> 
+     </header>
+     <div id="content">
+		 <section>
+		   <h1>Welcome to my awesome website.</h1>
+		   <h2>Indeed, this is an awesome website.</h2> 
+		   <p><strong>Primary content.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse pharetra, arcu in dapibus sagittis, felis leo rhoncus erat, non porttitor urna libero vitae nibh. Ut convallis eros sed magna.</p>
+		   <img src="ressources/photo.jpg" alt="" /> 
+		   <p>Aenean enim purus, adipiscing a, vehicula ut, tempor vitae, justo. Nam laoreet mauris vitae elit. Vivamus eros quam, euismod bibendum, pellentesque ut, tristique ut, nisl. <a href="#">Vestibulum ante ipsum primis</a> in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse non metus. Nullam tempor dictum sapien. Duis enim. In ligula. Cras ut enim. Sed dapibus ante in eros. Nulla facilisi. In rhoncus eleifend nunc. Sed risus nulla, pretium in, porta eget, lacinia eu, nunc. In hac habitasse platea dictumst. Vestibulum feugiat lectus et justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed aliquet dolor nec ipsum.</p>
+		   <h2>Oooh, more copy&hellip;</h2> 
+		   <p><a href="#">Ut erat nibh</a>, aliquet ut, congue at, tempus in, nunc. Ut aliquet leo et lectus volutpat molestie. Vivamus nunc. Nulla facilisi. Suspendisse dictum nunc tempus elit. Nullam urna quam, bibendum quis, tincidunt a, nonummy euismod, metus. Etiam convallis, dui venenatis feugiat elementum, justo lacus lobortis libero, vel iaculis nibh lectus eu urna. Vivamus arcu. In facilisis quam et lacus. Suspendisse sit amet neque ac enim lobortis ullamcorper. Etiam faucibus sapien ut nunc. Nullam consectetuer vehicula arcu.</p>
+		 </section>
+		 <aside>
+		   <h3>Important Information</h3> 
+		   <p><strong>Secondary content.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse pharetra, arcu in dapibus sagittis, felis leo rhoncus erat, non porttitor urna libero vitae nibh. Ut convallis eros sed magna. Aenean enim purus, adipiscing a, vehicula ut, tempor vitae, justo. Nam laoreet mauris vitae elit. This is interesting information. Ut erat nibh, aliquet ut, congue at, tempus in, nunc. Ut aliquet leo et lectus volutpat molestie. Vivamus nunc. <a href="#">Read&nbsp;more&nbsp;&rarr;</a> </p>
+		 </aside>
+     </div>
+     <footer>
+       <p>Photograph by <a href="#">Jin Bol</a>.</p>
+     </footer>
+   </div>

@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#paragraphe1, #paragraphe2, #paragraphe3 {
+    width: 600px;
+    border: solid 3px;
+    margin-left: 250px;
+    display: none;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+#paragraphe ul{
+    position: fixed;
+}
+ul li:first-child a {
+    color: red;
+    text-decoration: none;
+}
+ul li:nth-child(2) a {
+    color: aqua;
+    text-decoration: none;
+}
+ul li:nth-child(3) a {
+    color: green;
+    text-decoration: none;
+}
+#paragraphe1 h2{
+    color: red;
+}
+#paragraphe2 h2{
+    color: aqua;
+}
+#paragraphe3 h2{
+    color: green;
+}
+#paragraphe1{
+    border-color: red;
+}
+#paragraphe2{
+    border-color: aqua;
+}
+#paragraphe3{
+    border-color: green;
+}
+#paragraphe1:target,#paragraphe2:target,#paragraphe3:target {
+    display: flex;
+    flex-direction: column;
+}

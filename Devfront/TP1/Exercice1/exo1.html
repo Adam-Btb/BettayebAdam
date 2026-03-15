@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="exo1.css" />
+</head>
+<body>
+    <div id="menu-navigation-tp">
+    <nav>
+        <ul class="menu-liste">
+            <li class="menu-item">
+                <a href="../../index.html" class="tp-title">Accueil</a>
+            </li>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP1</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP1/Exercice1/exo1.html">Exercice 1</a></li>
+                    <li><a href="../../TP1/Exercice2/Exercice2.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP2</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP2/Exercice2-1/exercice2.html">Exo 2-1</a></li>
+                    <li><a href="../../TP2/Exercice2-2/exercice2.html">Exo 2-2</a></li>
+                    <li><a href="../../TP2/Exercice2-3/exercice2.html">Exo 2-3</a></li>
+                    <li><a href="../../TP2/Exercice3/exercice3.html">Exercice 3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP3</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP3/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP3/Exercice2/index.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP4</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP4/Exercice1/exercice1.html">Exercice 1</a></li>
+                    <li><a href="../../TP4/Exercice2/exercice2.html">Exercice 2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP5</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP5/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP5/Exercice6/index.html">Exercice 6</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP6</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP6/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP6/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP6/Exercice3/index.html">Exercice 3</a></li>
+                    <li><a href="../../TP6/Exercice4/index.html">Exercice 4</a></li>
+                    <li><a href="../../TP6/Exercice5/index.html">Exercice 5</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP7</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP7/Exercice2/index.html">Exercice 2</a></li>
+                    <li><a href="../../TP7/Exercice3/index.html">Exercice 3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <span class="tp-title">TP8</span>
+                <ul class="sous-menu">
+                    <li><a href="../../TP8/Exercice1/index.html">Exercice 1</a></li>
+                    <li><a href="../../TP8/Exercice2/index.html">Exercice 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+    #menu-navigation-tp {
+        background-color: #000319; 
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 9999;
+    }
+
+    #menu-navigation-tp ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu-navigation-tp a {
+        text-decoration: none;
+        color: white;
+    }
+    #menu-navigation-tp .menu-liste {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    #menu-navigation-tp .menu-item {
+        position: relative;
+    }
+    #menu-navigation-tp .tp-title {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    #menu-navigation-tp .menu-item:hover .tp-title {
+        background-color: #000319;
+        color: #CBACF9; 
+    }
+    #menu-navigation-tp .sous-menu {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000319;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        border-radius: 0 0 4px 4px;
+    }
+    #menu-navigation-tp .sous-menu li a {
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid #000319;
+        transition: padding-left 0.2s;
+    }
+
+    #menu-navigation-tp .sous-menu li:last-child a {
+        border-bottom: none;
+    }
+    #menu-navigation-tp .sous-menu li a:hover {
+        background-color: #000319;
+        padding-left: 20px; 
+        color: #CBACF9;
+    }
+    #menu-navigation-tp .menu-item:hover .sous-menu {
+        display: block;
+    }
+</style>
+    <main>
+        <section>
+            <header>
+                <div class="gauche">
+                    <h1>FLEX CONTAINER</h1>
+                    <h2>(élément parent)</h2>
+                </div>
+                <div class="droite">
+                    <div>display: flex</div>
+                    <div id="deux">display: inline-flex</div>
+                </div>
+            </header>
+            <div>
+                <table class="table1">
+                    <tr>
+                        <th>flex-direction</th>
+                        <th>flex-wrap</th>
+                        <th>justify-content</th>
+                        <th>align-items</th>
+                        <th>align-content</th>
+                    </tr>
+                    <tr>
+                        <td class="texte" rowspan="2">
+                            row<br />
+                            row-reverse<br />
+                            column<br />
+                            column-reverse<br />
+                        </td>
+                        <td class="texte" rowspan="2">
+                            no-wrap<br />
+                            wrap<br />
+                            wrap-reverse
+                        </td>
+                        <td class="st">axe principal (Main)</td>
+                        <td class="st" colspan="2">axe secondaire (Cross)</td>
+                    </tr>
+                    <tr>
+                        <td class="texte" rowspan="3">
+                            flex-start<br />
+                            flex-end<br />
+                            center<br />
+                            space-between<br />
+                            space-around<br />
+                            space-evenly
+                            
+                        </td>
+                        <td class="texte2" rowspan="3">
+                            flex-start<br />
+                            flex-end<br />
+                            center<br />
+                            baseline<br />
+                            <div class="rouge">stretch</div> 
+
+                        </td>
+                        <td class="texte2" rowspan="3">
+                            flex-start<br />
+                            flex-end<br />
+                            center<br />
+                            space-between<br />
+                            space-around<br />
+                            <div class="rouge">stretch</div> 
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">flex-flow</th>
+                    </tr>
+                    <tr>
+                        <td class="texte2" colspan="2">flex-direction + flex-wrap.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <header>
+                <div class="gauche">
+                    <h1>FLEX ITEMS</h1>
+                    <h2>(élément enfant)</h2>
+                </div>
+                <div class="droite2">
+                    <div>ITEM 1</div>
+                    <div>ITEM 2</div>
+                    <div>ITEM 3</div>
+                </div>
+            </header>
+            <table class="table2">
+                    <tr>
+                        <th colspan="1" class="titre">order</th>
+                        <td colspan="3">0</th>
+                    </tr>
+                    <tr>
+                        <th class="titre">
+                            flex-grow
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td rowspan="3">
+                            <span>flex :</span> 
+                            <span class="auto">0 1 auto</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="titre">flex-shrink</td>
+                        <td >1</td>
+                    </tr>
+                    <tr>
+                        <th class="titre" >flex-basis</td>
+                        <td >auto</td>
+                    </tr>
+                    <tr>
+                        <th colspan="1" class="titre">align-self</td>
+                        <td colspan="3" >auto</td>
+                    </tr>
+                </table>
+                <p class="espace">&nbsp</p>
+        </section>
+        
+    </main>  
+    <div style="max-width: 800px; margin: 20px auto; padding: 20px; border-radius: 8px; background-color: #000319; color: #CBACF9; font-family: sans-serif; line-height: 1.5;">
+    <h3 style="margin-top: 0; border-bottom: 1px solid #CBACF9; padding-bottom: 10px;">Bilan personnel</h3>
+    
+    <p>
+        <strong>Connaissances :</strong> J'ai travaillé sur le positionnement CSS avec Flexbox. J'ai appris à différencier les commandes du conteneur parent, comme "flex-direction" ou "justify-content", de celles des éléments enfants comme "order" ou "flex-grow".
+    </p>
+
+    <p>
+        <strong>Difficulté :</strong> C'est un exercice de niveau moyen.
+    </p>
+
+    <p>
+        <strong>Avis :</strong> Cet exercice est très utile pour mon apprentissage du Développement Front. Il m'a permis de comprendre comment structurer une grille complexe et gérer les axes principal et secondaire sans utiliser de tableaux.
+    </p>
+
+    <p>
+        <strong>Résultat :</strong> Je suis satisfait du résultat, mon code reproduit bien l'apparence demandée et la structure est propre.
+    </p>
+</div>
+</body>
+</html>
